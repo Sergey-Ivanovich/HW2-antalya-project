@@ -1,5 +1,44 @@
-h1,
-h2,
-h3 {
+body {
   font-family: "poppins", sans-serif;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/antalya-beach.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+}
+
+header h1 {
+  display: block;
+  font-size: 84px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header h2 {
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+
+header h3 {
+  letter-spacing: 5px;
+}
+
+header a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  background-color: white;
+  color: rgb(35, 35, 35);
+  transition: all 150ms ease-in-out;
+}
+
+header a:hover {
+  background-color: lightgray;
 }
