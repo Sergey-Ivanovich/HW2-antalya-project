@@ -1,8 +1,13 @@
+html {
+  overscroll-behavior: none;
+}
+
 body {
   font-family: "poppins", sans-serif;
 }
 
 header {
+  margin: -10px -10px 0px;
   text-align: center;
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -53,7 +58,69 @@ header a:hover {
   background-color: lightgray;
 }
 
-@media (max-width: 900px) {
+hr {
+  border-radius: 10px;
+  height: 4px;
+  background-color: white;
+  border: none;
+}
+
+footer {
+  margin: 350px -10px -20px;
+  text-align: center;
+  padding: 100px 20px 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/antalya-mountains.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+footer p.water-mark {
+  margin: -50px auto 50px;
+}
+
+footer h3 {
+  text-align: center;
+}
+
+footer .ul-container {
+  text-align: center;
+  display: block;
+  margin: 0 25%;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(190, 190, 190);
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: aqua;
+}
+
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .footer-grid .child {
+  padding: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+footer .footer-grid .child p {
+  text-align: start;
+}
+
+footer .footer-grid .child:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
   header {
     padding: 50px 0px;
   }
@@ -79,5 +146,22 @@ header a:hover {
 
   a.mobile:hover {
     background-color: gray;
+  }
+
+  footer ul {
+    padding: 0px;
+    list-style-type: none;
+  }
+
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer .top-border {
+    border-top: 2px solid white;
+  }
+
+  footer hr {
+    display: none;
   }
 }
