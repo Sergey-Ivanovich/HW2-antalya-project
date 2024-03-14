@@ -31,12 +31,20 @@ header h3 {
 header a {
   display: inline-block;
   margin-top: 10px;
+}
+
+a {
+  text-align: center;
   text-decoration: none;
   border-radius: 6px;
   padding: 12px 24px;
   background-color: white;
   color: rgb(35, 35, 35);
   transition: all 150ms ease-in-out;
+}
+
+a.mobile {
+  display: none;
 }
 
 header a:hover {
@@ -54,5 +62,20 @@ header a:hover {
 
   header h2 {
     font-size: 20px;
+  }
+
+  header a {
+    display: none;
+    padding: 20px;
+  }
+
+  a.mobile {
+    margin-top: 20px;
+    display: block;
+    background-color: lightgrey;
+  }
+
+  a.mobile:hover {
+    background-color: gray;
   }
 }
