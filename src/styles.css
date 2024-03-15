@@ -39,7 +39,8 @@ header a {
   margin-top: 10px;
 }
 
-header a {
+header a,
+.btn-clean {
   cursor: pointer;
   text-align: center;
   text-decoration: none;
