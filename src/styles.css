@@ -186,7 +186,9 @@ footer .footer-grid .child:hover {
   }
 
   main {
-    border: none;
+    padding: 10px 10px;
+    border-left: 9px solid gray;
+    border-right: 9px solid gray;
   }
 
   footer {
