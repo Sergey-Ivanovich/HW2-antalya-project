@@ -185,6 +185,10 @@ footer .footer-grid .child:hover {
     background-color: gray;
   }
 
+  main {
+    border: none;
+  }
+
   footer {
     padding-bottom: 10px;
   }
