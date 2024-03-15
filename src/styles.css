@@ -148,8 +148,8 @@ footer .footer-grid .child:hover {
 }
 
 @media (max-width: 1400px) {
-  .grid {
-    grid-template-columns: auto;
+  img.mobile {
+    display: none;
   }
 }
 
