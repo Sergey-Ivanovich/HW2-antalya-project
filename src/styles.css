@@ -50,8 +50,31 @@ main a {
   transition: all 150ms ease-in-out;
 }
 
+main {
+  margin: 0px -10px;
+  border-left: 40px solid rgba(128, 128, 128, 0.5);
+  border-right: 40px solid rgba(128, 128, 128, 0.5);
+  padding: 10px 50px 20px;
+}
+
 a.mobile {
   display: none;
+}
+
+.descrip-container h3 {
+  opacity: 30%;
+  margin: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.grid img.fix {
+  width: 100%;
+  border-radius: 10px;
 }
 
 header a:hover {
@@ -65,8 +88,12 @@ hr {
   border: none;
 }
 
+.top-img-desc {
+  background-color: white;
+}
+
 footer {
-  margin: 350px -10px -20px;
+  margin: 0px -10px -20px;
   text-align: center;
   padding: 100px 20px 20px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -120,6 +147,12 @@ footer .footer-grid .child:hover {
   border-radius: 10px;
 }
 
+@media (max-width: 1400px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+}
+
 @media (max-width: 1000px) {
   header {
     padding: 50px 0px;
@@ -142,6 +175,10 @@ footer .footer-grid .child:hover {
     margin-top: 20px;
     display: block;
     background-color: lightgrey;
+  }
+
+  img.mobile {
+    display: none;
   }
 
   a.mobile:hover {
