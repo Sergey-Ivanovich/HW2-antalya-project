@@ -29,7 +29,17 @@ header h2 {
   font-size: 25px;
 }
 
+header h3 {
+  opacity: 0.6;
+}
+
+h2 {
+  text-align: center;
+}
+
 h3 {
+  text-align: center;
+  opacity: 0.3;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -102,15 +112,6 @@ h4 {
   padding: 20px;
   margin: 10px -50px 0px;
   background-color: rgb(240, 240, 240);
-}
-
-.cafes h3 {
-  opacity: 0.2;
-}
-
-.cafes h3,
-.cafes h2 {
-  text-align: center;
 }
 
 .card-container {
@@ -195,6 +196,25 @@ iframe {
   background-color: black;
 }
 
+section.gallery {
+  margin: 80px 0px 120px;
+}
+
+.gallery-photo-container {
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-photo-container img {
+  width: 100%;
+  transition: all 100ms ease-in-out;
+}
+
+.gallery-photo-container img:hover {
+  transform: scale(1.2);
+}
+
 footer {
   margin: 0px -10px -20px;
   text-align: center;
@@ -257,6 +277,10 @@ footer .footer-grid .child:hover {
 }
 
 @media (max-width: 1000px) {
+  .gallery-photo-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .cafes {
     margin: 10px -10px;
   }
@@ -324,6 +348,16 @@ footer .footer-grid .child:hover {
   }
 
   footer hr {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-header {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
     display: none;
   }
 }
