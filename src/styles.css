@@ -257,6 +257,7 @@ footer .footer-grid {
 }
 
 footer .footer-grid .child {
+  opacity: 0.5;
   padding: 10px;
   transition: all 150ms ease-in-out;
 }
@@ -266,8 +267,13 @@ footer .footer-grid .child p {
 }
 
 footer .footer-grid .child:hover {
+  opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+}
+
+footer .footer-grid .child h3 {
+  opacity: 1;
 }
 
 @media (max-width: 1400px) {
