@@ -366,4 +366,8 @@ footer .footer-grid .child h3 {
   .card img {
     display: none;
   }
+
+  .card iframe {
+    border-radius: 10px;
+  }
 }
